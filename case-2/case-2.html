@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assigment 2</title>
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+  <style>
+    body{
+      background-color: blue;
+    }
+    body>div{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    body>div>div:nth-child(2){
+      z-index: 2;
+      width: 250px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      background: conic-gradient(
+              red 25%,
+              white 20%
+      );
+      position: absolute;
+      rotate: -45deg;
+      transition: transform 2s ease-in-out;
+    }
+    body>div>div:first-child{
+      width: 250px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    body>div>div:last-child{
+      z-index: 3;
+      width: 225px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      position: absolute;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    body>div>div:nth-child(2):hover{
+      transform-origin: center;  /* Change the rotation point */
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div></div>
+    <div></div>
+    <div>RWAD</div>
+  </div>
+</body>
+</html>
