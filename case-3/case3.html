@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case3</title>
+    <link rel="stylesheet" href="../.idea/access/lib/normalize.css">
+
+    <style>
+        section{
+            width: 800px;
+            height: 600px;
+            border:3px solid black;
+            position: relative;
+            margin: 10px;
+        }
+        div{
+            position: absolute;
+            width: 170px;
+            border-radius: 20px;
+            height: 100px;
+            animation-name: animate;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 3s;
+        }
+        @keyframes animate {
+            0%{
+                background-color: blue;
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: #ebf10e;
+                transform: rotate(180deg);
+                top: 0;
+                left: 630px;
+            }
+            50%{
+                background-color: #883008;
+                transform: rotate(360deg);
+                left: 630px;
+                top: 500px;
+            }
+            75%{
+                background-color: #d23483;
+                transform: rotate(180deg);
+                top: 500px;
+                left: 0;
+            }
+            100%{
+                background-color: #c2810a;
+                transform: rotate(0deg);
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>
